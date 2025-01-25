@@ -19,20 +19,11 @@ If you have Node Version Manager (NVM), enter `nvm install` in this project's ro
 
 `npm start`
 
-# Output
+# Additional info
 
-example:
+The ledger is public, so anyone with the wallet address, can lookup the balance and transactions, for instance here:
 
-```
-wallet address (public):
-rs8Xtg9r4PXt4nb4zaxycsfu5REW43jXRo
+<https://xrpscan.com/>
 
-private key (keep secret):
-004D65074963BCA9800XYZX851186781E1BC8C38288748DBCE52FCFC3E43A16524
-```
-
-The ledger is public, so anyone with the wallet address, will know balance, and transactions. XRP can also be sent to that address.
-
-The private key is required to send
-
+XRP can be sent to that address, but to send XRP out of that address the private key is required. Transactions are not reversible, so never give away private keys.
 
