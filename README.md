@@ -19,6 +19,18 @@ If you have Node Version Manager (NVM), enter `nvm install` in this project's ro
 
 `npm start`
 
+Or,
+
+# Global install
+
+install:
+
+`npm i -g`
+
+run:
+
+`npx easyxrp`
+
 # Additional info
 
 The ledger is public, so anyone with the wallet address, can lookup the balance and transactions, for instance here:
@@ -26,4 +38,3 @@ The ledger is public, so anyone with the wallet address, can lookup the balance 
 <https://xrpscan.com/>
 
 XRP can be sent to that address, but to send XRP out of that address the private key is required. Transactions are not reversible, so never give away private keys.
-

@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const { generateSeed, deriveKeypair, deriveAddress } = require("ripple-keypairs");
 
 const seed = generateSeed();

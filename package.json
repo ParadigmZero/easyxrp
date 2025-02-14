@@ -1,6 +1,10 @@
 {
+  "name": "easyxrp",
   "dependencies": {
     "ripple-keypairs": "^2.0.0"
+  },
+  "bin": {
+    "easyxrp": "./index.js"
   },
   "scripts": {
     "start": "node index.js"
