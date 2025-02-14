@@ -1,7 +1,7 @@
 #! /usr/bin/env node
-const { generateSeed, deriveKeypair, deriveAddress } = require("ripple-keypairs");
+import { generateSeed, deriveKeypair, deriveAddress } from "ripple-keypairs";
 
-function generateXRPwallet() {
+export function generateXRPwallet() {
     const seed = generateSeed();
     const keypair = deriveKeypair(seed);
     return {
