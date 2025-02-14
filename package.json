@@ -1,12 +1,22 @@
 {
   "name": "easyxrp",
   "version": "1.0.0",
+  "author": "Joseph Alton",
+  "description": "Easily generate Ripple XRP wallet address, private key (and seed)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParadigmZero/easyxrp.git"
+  },
   "dependencies": {
-    "ripple-keypairs": "^2.0.0"
+    "ripple-keypairs": "2.0.0"
   },
   "bin": {
     "easyxrp": "./index.js"
   },
+  "keywords": [
+    "xrp", "ripple"
+  ],
   "scripts": {
     "start": "node index.js"
   }
