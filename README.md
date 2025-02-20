@@ -1,12 +1,12 @@
 # About
 
-Generate Ripple XRP wallet address and private key.
+Easily, generate a potential Ripple XRP wallet address (with private key .etc), or check balance of any wallet.
 
 Can be run as a standalone npx script, or used as an external library.
 
-Since this uses Ripples official library, and is open-source, and you can run locally on your own device, risk of private key being compromised is minimized.
+Since this uses Ripples official libraries, and is open-source, and you can run locally on your own device, risk of private key being compromised when generating a new (potential) wallet is minimized.
 
-Wallet address will not be activated until a minimum amount of XRP is sent to it. At this time it is 1 XRP. Refer to the official documentation:
+Wallet address will not be activated until a minimum amount of XRP is sent to it. Refer to the reserve amount as to what this is:
 
 <https://xrpl.org/docs/concepts/accounts/reserves>
 
@@ -16,7 +16,13 @@ Requires NodeJS to be installed.
 
 ## remotely via npx
 
+generate new potential XRP wallet details:
+
 `npx easyxrp`
+
+check the balance of a wallet:
+
+`npx easyxrp <ENTER_WALLET_ADDRESS>`
 
 ## locally
 
@@ -28,17 +34,13 @@ If you have Node Version Manager (NVM), enter `nvm install` in this project's ro
 
 # Usage as library (node module)
 
-`import { generateXRPwallet } from 'easyxrp';`
+```JavaScript
+import {generateXRPWallet, checkXRPBalance} from 'easyxrp';
 
-`generateXRPwallet()` returns object:
+const walletDetails = generateXRPWallet();
+checkXRPBalance("enteravalidwalletaddress");
+```
 
-```
-{
-    seed: string;
-    walletAddress: string;
-    privateKey: string;
-}
-```
 
 # Additional info
 
