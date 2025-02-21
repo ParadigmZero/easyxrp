@@ -10,29 +10,35 @@ Wallet address will not be activated until a minimum amount of XRP is sent to it
 
 <https://xrpl.org/docs/concepts/accounts/reserves>
 
-# Running (standalone)
+
+# Running
 
 Requires NodeJS to be installed.
 
-## remotely via npx
+##  Executable (Node npx)
+### Run executable remotely
 
 generate new potential XRP wallet details:
 
-`npx easyxrp`
+`npx easyxrp` or `npx easyxrp <ENTER_WALLET_ADDRESS>`
 
-check the balance of a wallet:
+### Run executable locally
 
-`npx easyxrp <ENTER_WALLET_ADDRESS>`
+install globally:
 
-## locally
+`npm i easyxrp -g`
 
-If you have Node Version Manager (NVM), enter `nvm install` in this project's root directory.
+then you can run it offline, without even needing an internet connection. In your terminal:
 
-### Run
+`easyxrp` or `easyxrp <ENTER_WALLET_ADDRESS>`
 
-`npm start`
+## Running for development
 
-# Usage as library (node module)
+optional: if you are using `nvm` enter `nvm install`
+
+`npm start` or `npm start <ENTER_WALLET_ADDRESS>`
+
+# Usage as library (npm Node module)
 
 ```JavaScript
 import {generateXRPWallet, checkXRPBalance} from 'easyxrp';

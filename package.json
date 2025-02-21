@@ -1,6 +1,6 @@
 {
   "name": "easyxrp",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "author": "Joseph Alton",
   "description": "Easily generate Ripple XRP wallet address, private key (and seed)",
   "type": "module",
