@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "ripple-keypairs": "^2.0.0",
-    "xrpl": "^4.2.0"
+    "xrpl": "^4.2.5"
   },
   "bin": {
     "easyxrp": "./index.js"
